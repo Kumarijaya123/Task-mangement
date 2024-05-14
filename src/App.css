@@ -5,3 +5,31 @@
  
 }
 
+
+.todotext {
+  animation: slideIn 1s ease-out;
+  font-size: 8vh;
+  font-family:'Rancho', sans-serif;
+  color: rgb(174, 223, 223);
+  animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+  0% {
+      text-shadow: 0 0 5px rgba(174, 222, 248, 0.6); /* Initial shadow */
+  }
+  50% {
+      text-shadow: 0 0 20px rgba(174, 222, 248, 1); /* Glowing effect */
+  }
+  100% {
+      text-shadow: 0 0 5px rgba(174, 222, 248, 0.6); /* Return to the initial shadow */
+  }
+}
+
+button{
+  transition: transform 0.6s ease-in-out;
+}
+button:hover{
+  transform: scale(1.1);
+}
+

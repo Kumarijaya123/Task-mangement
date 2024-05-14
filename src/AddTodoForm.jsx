@@ -16,14 +16,14 @@ function AddTodoForm({ addTodo }) {
     };
     return (
         <form onSubmit={handleSubmit} className={styles.todoForm}>
-            <input
+            <input style={{backgroundColor:"#1d1d1bf6"}}
                 type="text"
                 name="todoTitle"
                 id="todoTitle"
                 value={todoTitle}
                 onChange={(e) => setTodoTitle(e.target.value)}
             />
-            <button type="submit"> + Add Todo</button>
+            <button style={{backgroundColor:"#146f9666"}} type="submit"> + Add Todo</button>
         </form>
     );
 }

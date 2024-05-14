@@ -1,15 +1,21 @@
 /* eslint-disable react/prop-types */
+import { useState } from 'react';
 import styles from "./Todo.module.css";
+
 function Todo({ title, completed, deleteTodo, toggleCompleted, id }) {
+    const [addedTime] = useState(new Date().toLocaleString());
+
     return (
         <div className={styles.todo}>
-            <h2 className={completed ? styles.completed : null}>{title}</h2>
+            <h2 className={completed ? styles.completed : null}>
+                {title} - {addedTime}
+            </h2>
             <div className={styles.buttonWrapper}>
                 <button
                     className="delete"
                     onClick={() => {
                         deleteTodo(id);
-                    }}
+                    }}  style={{background:"#0afbba66", width:"100px", margin:"10px"}}
                 >
                     Delete
                 </button>
@@ -17,7 +23,7 @@ function Todo({ title, completed, deleteTodo, toggleCompleted, id }) {
                     className="done"
                     onClick={() => {
                         toggleCompleted(id);
-                    }}
+                    }} style={{background:"#12acae66", width:"100px"}}
                 >
                     {completed ? "Undone" : "Done"}
                 </button>
@@ -25,4 +31,5 @@ function Todo({ title, completed, deleteTodo, toggleCompleted, id }) {
         </div>
     );
 }
+
 export default Todo;

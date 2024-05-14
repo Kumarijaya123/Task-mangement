@@ -1,12 +1,10 @@
 .todoForm {
-    /* border: 2px solid lightblue; */
+
     display: flex;
     justify-content: space-between;
 }
 
 .todoForm input {
-    /* border: 2px solid yellow; */
-    /* width: 100%; */
     width: 80%;
     padding: 1rem;
     font-size: 1.2rem;
