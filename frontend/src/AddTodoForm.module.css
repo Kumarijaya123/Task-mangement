@@ -1,0 +1,19 @@
+.todoForm {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.todoForm input {
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.todoForm button {
+    width: 20%;
+    border-radius: 1rem;
+}
