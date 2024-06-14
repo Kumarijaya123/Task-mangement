@@ -2,10 +2,14 @@
     border: 2px solid white;
     border-radius: 1rem;
     padding: 1rem;
-    margin: 1rem
+    margin: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    
 }
 
 .completed{
     text-decoration: line-through;
     opacity: 0.6;
+  
 }

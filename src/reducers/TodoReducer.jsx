@@ -2,9 +2,9 @@ import { ADD_TODO, DELETE_TODO, TOGGLE_TODO, CLEAR_ALL } from '../actions/todoAc
 
 const initialState = {
     todos: [
-        { id: 1, title: "Go for morning run", completed: true },
-        { id: 2, title: "Teach react to students", completed: false },
-        { id: 3, title: "Fix bugs of codprog website", completed: false },
+        { id: 1, title: "Go for morning run", description: "Run 5 kilometers", completed: true },
+        { id: 2, title: "Teach react to students", description: "Cover hooks and lifecycle methods", completed: false },
+        { id: 3, title: "Fix bugs of codprog website", description: "Resolve issues reported by QA", completed: false },
     ],
 };
 
